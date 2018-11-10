@@ -155,13 +155,6 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		313CC43A2197608A008ED363 /* Controllers */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Controllers;
-			sourceTree = "<group>";
-		};
 		313CC43B21976091008ED363 /* Data Services */ = {
 			isa = PBXGroup;
 			children = (
@@ -177,6 +170,15 @@
 				313CC43D219760CD008ED363 /* Constants.swift */,
 			);
 			path = Helpers;
+			sourceTree = "<group>";
+		};
+		313CC44321978197008ED363 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				313CC43821975BF2008ED363 /* MethodsTVCell.swift */,
+				3163E9622197472D00AFCD68 /* MethodsVC.swift */,
+			);
+			path = Controllers;
 			sourceTree = "<group>";
 		};
 		3163E9542197472D00AFCD68 = {
@@ -208,10 +210,8 @@
 			children = (
 				313CC43C219760A1008ED363 /* Helpers */,
 				313CC43B21976091008ED363 /* Data Services */,
-				313CC43A2197608A008ED363 /* Controllers */,
+				313CC44321978197008ED363 /* Controllers */,
 				3163E9602197472D00AFCD68 /* AppDelegate.swift */,
-				3163E9622197472D00AFCD68 /* MethodsVC.swift */,
-				313CC43821975BF2008ED363 /* MethodsTVCell.swift */,
 				3163E9642197472D00AFCD68 /* Main.storyboard */,
 				3163E9672197472E00AFCD68 /* Assets.xcassets */,
 				3163E9692197472E00AFCD68 /* LaunchScreen.storyboard */,
@@ -678,7 +678,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_COMPLICATION_NAME = Complication;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = TGLE8RZWF5;
+				DEVELOPMENT_TEAM = MJGY4K29T3;
 				INFOPLIST_FILE = "WatchDog WatchKit Extension/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -700,7 +700,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_COMPLICATION_NAME = Complication;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = TGLE8RZWF5;
+				DEVELOPMENT_TEAM = MJGY4K29T3;
 				INFOPLIST_FILE = "WatchDog WatchKit Extension/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -723,7 +723,7 @@
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = "AppIcon-watchOS";
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = TGLE8RZWF5;
+				DEVELOPMENT_TEAM = MJGY4K29T3;
 				IBSC_MODULE = WatchDog_WatchKit_Extension;
 				INFOPLIST_FILE = "WatchDog WatchKit App/Info.plist";
 				PRODUCT_BUNDLE_IDENTIFIER = com.HolmeComputer.WatchDog.watchkitapp;
@@ -742,7 +742,7 @@
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = "AppIcon-watchOS";
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = TGLE8RZWF5;
+				DEVELOPMENT_TEAM = MJGY4K29T3;
 				IBSC_MODULE = WatchDog_WatchKit_Extension;
 				INFOPLIST_FILE = "WatchDog WatchKit App/Info.plist";
 				PRODUCT_BUNDLE_IDENTIFIER = com.HolmeComputer.WatchDog.watchkitapp;
@@ -760,7 +760,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = "AppIcon-iOS";
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = TGLE8RZWF5;
+				DEVELOPMENT_TEAM = MJGY4K29T3;
 				INFOPLIST_FILE = WatchDog/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -778,7 +778,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = "AppIcon-iOS";
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = TGLE8RZWF5;
+				DEVELOPMENT_TEAM = MJGY4K29T3;
 				INFOPLIST_FILE = WatchDog/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -797,7 +797,7 @@
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = TGLE8RZWF5;
+				DEVELOPMENT_TEAM = MJGY4K29T3;
 				INFOPLIST_FILE = WatchDogTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -818,7 +818,7 @@
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = TGLE8RZWF5;
+				DEVELOPMENT_TEAM = MJGY4K29T3;
 				INFOPLIST_FILE = WatchDogTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -838,7 +838,7 @@
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = TGLE8RZWF5;
+				DEVELOPMENT_TEAM = MJGY4K29T3;
 				INFOPLIST_FILE = WatchDogUITests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -858,7 +858,7 @@
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = TGLE8RZWF5;
+				DEVELOPMENT_TEAM = MJGY4K29T3;
 				INFOPLIST_FILE = WatchDogUITests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
