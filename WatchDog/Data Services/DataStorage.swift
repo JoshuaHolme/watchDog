@@ -35,9 +35,13 @@ class DataStorage {
         
         do {
             
-            let decoded  = defaults.object(forKey: Constants.instance.METHOD_KEY) as! Data
-            let decodedMethods = try NSKeyedUnarchiver.unarchiveTopLevelObjectWithData(decoded) as! [Method]
-            return decodedMethods
+            if let decoded  = defaults.object(forKey: Constants.instance.METHOD_KEY) as! Data? {
+                let decodedMethods = try NSKeyedUnarchiver.unarchiveTopLevelObjectWithData(decoded) as! [Method]
+                return decodedMethods
+            } else {
+                print("Nothing stored in array")
+                return [];
+            }
             
         } catch {
             

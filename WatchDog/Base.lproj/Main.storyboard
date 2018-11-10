@@ -97,6 +97,7 @@
                                             </constraints>
                                         </tableViewCellContentView>
                                         <connections>
+                                            <outlet property="containerView" destination="ifg-5E-WLS" id="abY-Pa-8bZ"/>
                                             <outlet property="imgIcn" destination="Hxw-dv-OCa" id="DjU-jh-McX"/>
                                             <outlet property="optionsButton" destination="hAL-Rs-ReH" id="hC4-w4-7Br"/>
                                             <outlet property="title" destination="c8s-23-7F5" id="HsN-CI-lvX"/>

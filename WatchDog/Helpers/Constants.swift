@@ -21,4 +21,5 @@ class Constants {
     let CAN_SEND_MESSAGES = "canSendMessages"
     let IMAGE = "image"
     let AUDIO = "audio"
+    let COLOR = "color"
 }
