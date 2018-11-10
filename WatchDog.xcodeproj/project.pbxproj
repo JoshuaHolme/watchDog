@@ -701,7 +701,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
-				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_APPICON_NAME = "AppIcon-watchOS";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = TGLE8RZWF5;
 				IBSC_MODULE = WatchDog_WatchKit_Extension;
@@ -720,7 +720,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
-				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_APPICON_NAME = "AppIcon-watchOS";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = TGLE8RZWF5;
 				IBSC_MODULE = WatchDog_WatchKit_Extension;
@@ -738,7 +738,7 @@
 		3163E9B02197473000AFCD68 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_APPICON_NAME = "AppIcon-iOS";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = TGLE8RZWF5;
 				INFOPLIST_FILE = WatchDog/Info.plist;
@@ -756,7 +756,7 @@
 		3163E9B12197473000AFCD68 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_APPICON_NAME = "AppIcon-iOS";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = TGLE8RZWF5;
 				INFOPLIST_FILE = WatchDog/Info.plist;

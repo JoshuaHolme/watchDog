@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder.WatchKit.Storyboard" version="3.0" toolsVersion="14460.31" targetRuntime="watchKit" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="kGG-dW-eiJ">
+<document type="com.apple.InterfaceBuilder.WatchKit.Storyboard" version="3.0" toolsVersion="14460.31" targetRuntime="watchKit" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="4MN-8s-NDd">
     <device id="watch44" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
@@ -9,13 +9,6 @@
         <plugIn identifier="com.apple.InterfaceBuilder.IBWatchKitPlugin" version="14460.16"/>
     </dependencies>
     <scenes>
-        <!--Interface Controller-->
-        <scene sceneID="aou-V4-d1y">
-            <objects>
-                <controller id="AgC-eL-Hgc" customClass="InterfaceController" customModule="WatchDog_WatchKit_App" customModuleProvider="target"/>
-            </objects>
-            <point key="canvasLocation" x="220" y="345"/>
-        </scene>
         <!--Static Notification Interface Controller-->
         <scene sceneID="AEw-b0-oYE">
             <objects>
@@ -48,17 +41,80 @@
             <point key="canvasLocation" x="495" y="773"/>
         </scene>
         <!--Interface Controller-->
+        <scene sceneID="l87-aT-TS6">
+            <objects>
+                <controller id="4MN-8s-NDd">
+                    <items>
+                        <button width="1" alignment="left" title="Start" id="Fza-An-n8n">
+                            <connections>
+                                <segue destination="kGG-dW-eiJ" kind="push" id="7p8-p6-mDR"/>
+                            </connections>
+                        </button>
+                        <button width="1" alignment="left" title="Info" id="q8g-DR-Gea">
+                            <connections>
+                                <segue destination="qoX-mO-zs9" kind="push" id="1Jy-Vg-u8p"/>
+                            </connections>
+                        </button>
+                        <button width="1" alignment="left" title="Locket" id="PIF-CN-m4r">
+                            <connections>
+                                <segue destination="d3i-Ty-QIN" kind="push" id="yHg-aP-vYY"/>
+                            </connections>
+                        </button>
+                    </items>
+                </controller>
+            </objects>
+            <point key="canvasLocation" x="41" y="-353"/>
+        </scene>
+        <!--Interface Controller-->
         <scene sceneID="GBO-7h-svg">
             <objects>
                 <controller id="kGG-dW-eiJ" customClass="InterfaceController" customModule="WatchDog_WatchKit_App" customModuleProvider="target">
-                    <menu key="menu" id="xL4-lJ-pDc">
-                        <items>
-                            <menuItem title="Menu Item" icon="shuffle" id="96Z-YP-UeN"/>
-                        </items>
-                    </menu>
+                    <items>
+                        <group width="1" height="0.5" alignment="left" id="KFa-t8-rqY">
+                            <items>
+                                <button width="0.5" height="1" alignment="left" title="End" id="QZ9-VA-5dB"/>
+                                <button width="0.5" height="1" alignment="left" title="Call" id="9Ni-83-81C"/>
+                            </items>
+                        </group>
+                        <group width="1" height="0.5" alignment="left" id="qBU-jD-NXg">
+                            <items>
+                                <button width="0.5" height="1" alignment="left" title="SOS" id="klR-Wx-qDr"/>
+                                <button width="0.5" height="1" alignment="left" title="Family" id="s45-2G-d9A"/>
+                            </items>
+                        </group>
+                    </items>
                 </controller>
             </objects>
-            <point key="canvasLocation" x="494" y="345"/>
+            <point key="canvasLocation" x="494" y="-353"/>
+        </scene>
+        <!--Interface Controller-->
+        <scene sceneID="siW-RP-ba5">
+            <objects>
+                <controller id="qoX-mO-zs9" customClass="InterfaceController" customModule="WatchDog_WatchKit_App" customModuleProvider="target">
+                    <items>
+                        <group width="1" height="0.29999999999999999" alignment="left" id="lgZ-dy-W3H">
+                            <items>
+                                <imageView width="0.29999999999999999" height="1" alignment="left" image="IMG_0001" contentMode="scaleAspectFill" id="88Y-7U-BF2"/>
+                                <label alignment="right" semanticContentAttribute="spatial" text="74 BPM" textAlignment="left" id="UeG-Lm-59r">
+                                    <fontDescription key="font" style="UICTFontTextStyleTitle0"/>
+                                </label>
+                            </items>
+                        </group>
+                    </items>
+                </controller>
+            </objects>
+            <point key="canvasLocation" x="494" y="-78"/>
+        </scene>
+        <!--Interface Controller-->
+        <scene sceneID="cGl-mz-dyd">
+            <objects>
+                <controller id="d3i-Ty-QIN" customClass="InterfaceController" customModule="WatchDog_WatchKit_App" customModuleProvider="target">
+                    <items>
+                        <imageView alignment="left" image="IMG_0001" contentMode="scaleAspectFill" id="sAi-eT-ZMR"/>
+                    </items>
+                </controller>
+            </objects>
+            <point key="canvasLocation" x="493.73913043478257" y="188.97321428571428"/>
         </scene>
     </scenes>
 </document>
