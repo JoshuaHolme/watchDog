@@ -40,35 +40,28 @@
             </objects>
             <point key="canvasLocation" x="495" y="773"/>
         </scene>
-        <!--Interface Controller-->
+        <!--Landing PageIC-->
         <scene sceneID="l87-aT-TS6">
             <objects>
-                <controller id="4MN-8s-NDd">
+                <controller id="4MN-8s-NDd" customClass="LandingPageIC" customModule="WatchDog_WatchKit_App" customModuleProvider="target">
                     <items>
                         <button width="1" alignment="left" title="Start" id="Fza-An-n8n">
                             <connections>
-                                <segue destination="kGG-dW-eiJ" kind="push" id="7p8-p6-mDR"/>
-                            </connections>
-                        </button>
-                        <button width="1" alignment="left" title="Info" id="q8g-DR-Gea">
-                            <connections>
-                                <segue destination="qoX-mO-zs9" kind="push" id="1Jy-Vg-u8p"/>
-                            </connections>
-                        </button>
-                        <button width="1" alignment="left" title="Locket" id="PIF-CN-m4r">
-                            <connections>
-                                <segue destination="d3i-Ty-QIN" kind="push" id="yHg-aP-vYY"/>
+                                <action selector="StartBtnPressed" destination="4MN-8s-NDd" id="K94-sQ-AaK"/>
                             </connections>
                         </button>
                     </items>
+                    <connections>
+                        <outlet property="StartBtn" destination="Fza-An-n8n" id="ifI-bI-8tZ"/>
+                    </connections>
                 </controller>
             </objects>
-            <point key="canvasLocation" x="41" y="-353"/>
+            <point key="canvasLocation" x="47" y="-354"/>
         </scene>
-        <!--Interface Controller-->
+        <!--Buttons-->
         <scene sceneID="GBO-7h-svg">
             <objects>
-                <controller id="kGG-dW-eiJ" customClass="InterfaceController" customModule="WatchDog_WatchKit_App" customModuleProvider="target">
+                <controller identifier="Buttons" id="kGG-dW-eiJ" customClass="ButtonPageIC" customModule="WatchDog_WatchKit_Extension">
                     <items>
                         <group width="1" height="0.5" alignment="left" id="KFa-t8-rqY">
                             <items>
@@ -83,14 +76,17 @@
                             </items>
                         </group>
                     </items>
+                    <connections>
+                        <segue destination="qoX-mO-zs9" kind="relationship" relationship="nextPage" id="yqe-SU-42s"/>
+                    </connections>
                 </controller>
             </objects>
             <point key="canvasLocation" x="494" y="-353"/>
         </scene>
-        <!--Interface Controller-->
+        <!--Info-->
         <scene sceneID="siW-RP-ba5">
             <objects>
-                <controller id="qoX-mO-zs9" customClass="InterfaceController" customModule="WatchDog_WatchKit_App" customModuleProvider="target">
+                <controller identifier="Info" id="qoX-mO-zs9" customClass="InfoIC" customModule="WatchDog_WatchKit_Extension">
                     <items>
                         <group width="1" height="0.29999999999999999" alignment="left" id="lgZ-dy-W3H">
                             <items>
@@ -101,17 +97,30 @@
                             </items>
                         </group>
                     </items>
+                    <menu key="menu" id="8nV-Qh-N0p">
+                        <items>
+                            <menuItem title="End" icon="decline" id="xdV-Pq-Iho"/>
+                        </items>
+                    </menu>
+                    <connections>
+                        <segue destination="d3i-Ty-QIN" kind="relationship" relationship="nextPage" id="Jxs-zB-9ud"/>
+                    </connections>
                 </controller>
             </objects>
-            <point key="canvasLocation" x="494" y="-78"/>
+            <point key="canvasLocation" x="494" y="-87"/>
         </scene>
-        <!--Interface Controller-->
+        <!--Locket-->
         <scene sceneID="cGl-mz-dyd">
             <objects>
-                <controller id="d3i-Ty-QIN" customClass="InterfaceController" customModule="WatchDog_WatchKit_App" customModuleProvider="target">
+                <controller identifier="Locket" id="d3i-Ty-QIN" customClass="LocketIC" customModule="WatchDog_WatchKit_Extension">
                     <items>
                         <imageView alignment="left" image="IMG_0001" contentMode="scaleAspectFill" id="sAi-eT-ZMR"/>
                     </items>
+                    <menu key="menu" id="rkv-iD-5Eh">
+                        <items>
+                            <menuItem title="End" icon="decline" id="GmV-d5-VFA"/>
+                        </items>
+                    </menu>
                 </controller>
             </objects>
             <point key="canvasLocation" x="493.73913043478257" y="188.97321428571428"/>

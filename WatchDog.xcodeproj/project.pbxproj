@@ -22,11 +22,14 @@
 		3163E98C2197472F00AFCD68 /* Interface.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3163E98A2197472F00AFCD68 /* Interface.storyboard */; };
 		3163E98E2197472F00AFCD68 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3163E98D2197472F00AFCD68 /* Assets.xcassets */; };
 		3163E9952197472F00AFCD68 /* WatchDog WatchKit Extension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 3163E9942197472F00AFCD68 /* WatchDog WatchKit Extension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
-		3163E99A2197472F00AFCD68 /* InterfaceController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3163E9992197472F00AFCD68 /* InterfaceController.swift */; };
 		3163E99C2197472F00AFCD68 /* ExtensionDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3163E99B2197472F00AFCD68 /* ExtensionDelegate.swift */; };
 		3163E99E2197472F00AFCD68 /* NotificationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3163E99D2197472F00AFCD68 /* NotificationController.swift */; };
 		3163E9A02197472F00AFCD68 /* ComplicationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3163E99F2197472F00AFCD68 /* ComplicationController.swift */; };
 		3163E9A22197473000AFCD68 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3163E9A12197473000AFCD68 /* Assets.xcassets */; };
+		69C758CE21978EF800E24F61 /* LocketIC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69C758C6219787A400E24F61 /* LocketIC.swift */; };
+		69C758CF21978EF800E24F61 /* InfoIC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69C758C42197879500E24F61 /* InfoIC.swift */; };
+		69C758D021978EF800E24F61 /* ButtonPageIC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69C758C22197878B00E24F61 /* ButtonPageIC.swift */; };
+		69E9BC4D2197903300E77BB9 /* LandingPageIC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69C758CC21978E8E00E24F61 /* LandingPageIC.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -108,13 +111,16 @@
 		3163E98D2197472F00AFCD68 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		3163E98F2197472F00AFCD68 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		3163E9942197472F00AFCD68 /* WatchDog WatchKit Extension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = "WatchDog WatchKit Extension.appex"; sourceTree = BUILT_PRODUCTS_DIR; };
-		3163E9992197472F00AFCD68 /* InterfaceController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InterfaceController.swift; sourceTree = "<group>"; };
 		3163E99B2197472F00AFCD68 /* ExtensionDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExtensionDelegate.swift; sourceTree = "<group>"; };
 		3163E99D2197472F00AFCD68 /* NotificationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationController.swift; sourceTree = "<group>"; };
 		3163E99F2197472F00AFCD68 /* ComplicationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ComplicationController.swift; sourceTree = "<group>"; };
 		3163E9A12197473000AFCD68 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		3163E9A32197473000AFCD68 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		3163E9A42197473000AFCD68 /* PushNotificationPayload.apns */ = {isa = PBXFileReference; lastKnownFileType = text; path = PushNotificationPayload.apns; sourceTree = "<group>"; };
+		69C758C22197878B00E24F61 /* ButtonPageIC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ButtonPageIC.swift; sourceTree = "<group>"; };
+		69C758C42197879500E24F61 /* InfoIC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InfoIC.swift; sourceTree = "<group>"; };
+		69C758C6219787A400E24F61 /* LocketIC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocketIC.swift; sourceTree = "<group>"; };
+		69C758CC21978E8E00E24F61 /* LandingPageIC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LandingPageIC.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -235,6 +241,7 @@
 		3163E9892197472F00AFCD68 /* WatchDog WatchKit App */ = {
 			isa = PBXGroup;
 			children = (
+				69C758BF2197864A00E24F61 /* Controllers */,
 				3163E98A2197472F00AFCD68 /* Interface.storyboard */,
 				3163E98D2197472F00AFCD68 /* Assets.xcassets */,
 				3163E98F2197472F00AFCD68 /* Info.plist */,
@@ -245,7 +252,6 @@
 		3163E9982197472F00AFCD68 /* WatchDog WatchKit Extension */ = {
 			isa = PBXGroup;
 			children = (
-				3163E9992197472F00AFCD68 /* InterfaceController.swift */,
 				3163E99B2197472F00AFCD68 /* ExtensionDelegate.swift */,
 				3163E99D2197472F00AFCD68 /* NotificationController.swift */,
 				3163E99F2197472F00AFCD68 /* ComplicationController.swift */,
@@ -254,6 +260,17 @@
 				3163E9A42197473000AFCD68 /* PushNotificationPayload.apns */,
 			);
 			path = "WatchDog WatchKit Extension";
+			sourceTree = "<group>";
+		};
+		69C758BF2197864A00E24F61 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				69C758CC21978E8E00E24F61 /* LandingPageIC.swift */,
+				69C758C22197878B00E24F61 /* ButtonPageIC.swift */,
+				69C758C42197879500E24F61 /* InfoIC.swift */,
+				69C758C6219787A400E24F61 /* LocketIC.swift */,
+			);
+			path = Controllers;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -477,10 +494,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				69C758CF21978EF800E24F61 /* InfoIC.swift in Sources */,
 				3163E99E2197472F00AFCD68 /* NotificationController.swift in Sources */,
+				69C758D021978EF800E24F61 /* ButtonPageIC.swift in Sources */,
 				3163E9A02197472F00AFCD68 /* ComplicationController.swift in Sources */,
 				3163E99C2197472F00AFCD68 /* ExtensionDelegate.swift in Sources */,
-				3163E99A2197472F00AFCD68 /* InterfaceController.swift in Sources */,
+				69E9BC4D2197903300E77BB9 /* LandingPageIC.swift in Sources */,
+				69C758CE21978EF800E24F61 /* LocketIC.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
