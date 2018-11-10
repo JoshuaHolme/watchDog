@@ -15,8 +15,36 @@ class DataStorage {
     let defaults = UserDefaults.standard
     
     func setMethods(methods: [Method], completionBlock: @escaping (Bool) -> Void) -> Void {
-        let encodedData: Data = NSKeyedArchiver.archivedData(withRootObject: methods)
-        defaults.set(encodedData, forKey: "teams")
-        defaults.synchronize()
+        
+        do {
+        
+            let encodedData: Data = try NSKeyedArchiver.archivedData(withRootObject: methods, requiringSecureCoding: false)
+            defaults.set(encodedData, forKey: Constants.instance.METHOD_KEY)
+            defaults.synchronize()
+            completionBlock(true)
+            
+        } catch {
+            
+            completionBlock(false)
+            print(error.localizedDescription)
+            
+        }
     }
+    
+    func getMethods() -> [Method] {
+        
+        do {
+            
+            let decoded  = defaults.object(forKey: Constants.instance.METHOD_KEY) as! Data
+            let decodedMethods = try NSKeyedUnarchiver.unarchiveTopLevelObjectWithData(decoded) as! [Method]
+            return decodedMethods
+            
+        } catch {
+            
+            let decodedMethods: [Method] = []
+            return decodedMethods
+        }
+    }
+    
+    
 }

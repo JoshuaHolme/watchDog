@@ -12,9 +12,12 @@ class MethodsVC: UIViewController, UITableViewDelegate, UITableViewDataSource {
 
     @IBOutlet weak var tableView: UITableView!
     
+    var methods: [Method] = []
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
+        methods = DataStorage.instance.getMethods()
         navigationController?.navigationBar.prefersLargeTitles = true
         self.tableView.separatorStyle = UITableViewCell.SeparatorStyle.none
     }
