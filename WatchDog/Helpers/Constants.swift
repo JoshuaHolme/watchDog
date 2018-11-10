@@ -17,5 +17,8 @@ class Constants {
     
     let CONTACTS = "contacts"
     let ICON = "icon"
-
+    let TITLE = "title"
+    let CAN_SEND_MESSAGES = "canSendMessages"
+    let IMAGE = "image"
+    let AUDIO = "audio"
 }

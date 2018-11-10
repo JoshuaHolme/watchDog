@@ -21,29 +21,33 @@ class Method: NSObject, NSCoding {
     
     var audio: String
     
-    init(title: String, icon: UIImage, canSendMessages: Bool, contacts: [Int]) {
+    init(title: String, icon: UIImage, canSendMessages: Bool, contacts: [Int], image: String, audio: String) {
         self.title = title
         self.icon = icon
         self.canSendMessages = canSendMessages
         self.contacts = contacts
-        self.image = ""
-        self.audio = ""
+        self.image = image
+        self.audio = audio
     }
     
     required convenience init(coder aDecoder: NSCoder) {
-        let title = aDecoder.decodeInteger(forKey: "id")
-        let icon = aDecoder.decodeObject(forKey: "name") as! String
-        let canSendMessages = aDecoder.decodeObject(forKey: "shortname") as! String
-        let contacts = aDecoder.decodeObject(forKey: "") as! [Int]
+        let title = aDecoder.decodeObject(forKey: Constants.instance.TITLE) as! String
+        let icon = aDecoder.decodeObject(forKey: Constants.instance.ICON) as! UIImage
+        let canSendMessages = aDecoder.decodeObject(forKey: Constants.instance.CAN_SEND_MESSAGES) as! Bool
+        let contacts = aDecoder.decodeObject(forKey: Constants.instance.CONTACTS) as! [Int]
+        let image = aDecoder.decodeObject(forKey: Constants.instance.IMAGE) as! String
+        let audio = aDecoder.decodeObject(forKey: Constants.instance.AUDIO) as! String
         
-        
-        self.init(id: title, name: icon, shortname: canSendMessages)
+        self.init(title: title, icon: icon, canSendMessages: canSendMessages, contacts: contacts, image: image, audio: audio)
     }
     
     func encode(with aCoder: NSCoder) {
-    aCoder.encode(title, forKey: "id")
-    aCoder.encode(icon, forKey: "name")
-    aCoder.encode(canSendMessages, forKey: "shortname")
+        aCoder.encode(title, forKey: Constants.instance.TITLE)
+        aCoder.encode(icon, forKey: Constants.instance.ICON)
+        aCoder.encode(canSendMessages, forKey: Constants.instance.CAN_SEND_MESSAGES)
+        aCoder.encode(contacts, forKey: Constants.instance.CONTACTS)
+        aCoder.encode(image, forKey: Constants.instance.IMAGE)
+        aCoder.encode(audio, forKey: Constants.instance.AUDIO)
     }
     
 }
