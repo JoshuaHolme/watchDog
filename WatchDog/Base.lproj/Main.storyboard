@@ -44,7 +44,7 @@
             </objects>
             <point key="canvasLocation" x="770" y="-519"/>
         </scene>
-        <!--Remedies-->
+        <!--Therapies-->
         <scene sceneID="q0V-1U-pja">
             <objects>
                 <viewController id="HWa-WA-fbh" customClass="MethodsVC" customModule="WatchDog" customModuleProvider="target" sceneMemberID="viewController">
@@ -64,9 +64,7 @@
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ifg-5E-WLS">
-                                                    
                                                     <rect key="frame" x="22.666666666666657" y="13.666666666666664" width="369" height="93"/>
-
                                                     <subviews>
                                                         <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="Hxw-dv-OCa">
                                                             <rect key="frame" x="11.999999999999996" y="46" width="35" height="35"/>
@@ -131,7 +129,7 @@
                         <viewLayoutGuide key="safeArea" id="L2x-kI-AOc"/>
                     </view>
                     <tabBarItem key="tabBarItem" title="Item 1" id="qqO-KT-h1E"/>
-                    <navigationItem key="navigationItem" title="Remedies" id="yJT-vT-MUs">
+                    <navigationItem key="navigationItem" title="Therapies" id="yJT-vT-MUs">
                         <barButtonItem key="rightBarButtonItem" systemItem="add" id="VSZ-0a-cpN">
                             <connections>
                                 <segue destination="GUv-F0-UjH" kind="show" id="yl2-Nc-Q3y"/>
@@ -195,7 +193,7 @@
                                 <constraints>
                                     <constraint firstAttribute="height" constant="44" id="XIb-eq-dvy"/>
                                 </constraints>
-                                <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                                <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="19"/>
                                 <state key="normal" title="  Select a comforting image">
                                     <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
@@ -206,51 +204,58 @@
                             <stackView opaque="NO" contentMode="scaleToFill" distribution="equalSpacing" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="sxr-p6-vxw">
                                 <rect key="frame" x="12" y="525" width="390" height="30"/>
                                 <subviews>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="PMM-UZ-Xc0">
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="PMM-UZ-Xc0" userLabel="blueColor">
                                         <rect key="frame" x="0.0" y="0.0" width="30" height="30"/>
                                         <color key="backgroundColor" red="0.33929505939999999" green="0.62991499900000003" blue="1" alpha="1" colorSpace="deviceRGB"/>
+                                        <color key="tintColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <connections>
                                             <action selector="addColorOne:" destination="GUv-F0-UjH" eventType="touchUpInside" id="cX1-RR-Hbn"/>
                                         </connections>
                                     </button>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Feg-wc-6xK">
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Feg-wc-6xK" userLabel="yellowColor">
                                         <rect key="frame" x="60" y="0.0" width="30" height="30"/>
                                         <color key="backgroundColor" red="0.89019607840000003" green="0.74509803919999995" blue="0.25098039220000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                        <color key="tintColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <connections>
                                             <action selector="addColorTwo:" destination="GUv-F0-UjH" eventType="touchUpInside" id="XmG-ir-9Ts"/>
                                         </connections>
                                     </button>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="HrL-UK-BCj">
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="HrL-UK-BCj" userLabel="purpleColor">
                                         <rect key="frame" x="120" y="0.0" width="30" height="30"/>
                                         <color key="backgroundColor" red="0.65923734320509575" green="0.19482967015854999" blue="0.77494447969543145" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                        <color key="tintColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <connections>
                                             <action selector="addColorThree:" destination="GUv-F0-UjH" eventType="touchUpInside" id="UFt-IT-7vO"/>
                                         </connections>
                                     </button>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Crv-at-VYv">
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Crv-at-VYv" userLabel="redColor">
                                         <rect key="frame" x="180" y="0.0" width="30" height="30"/>
                                         <color key="backgroundColor" red="0.80784313730000001" green="0.3294117647" blue="0.23921568630000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <color key="tintColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <connections>
                                             <action selector="addColorFour:" destination="GUv-F0-UjH" eventType="touchUpInside" id="Jym-LS-ChG"/>
                                         </connections>
                                     </button>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7f7-GS-eGb">
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7f7-GS-eGb" userLabel="orangeColor">
                                         <rect key="frame" x="240" y="0.0" width="30" height="30"/>
                                         <color key="backgroundColor" red="0.81176470590000005" green="0.47797239314027806" blue="0.13386808339547174" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                        <color key="tintColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <connections>
                                             <action selector="addColorFive:" destination="GUv-F0-UjH" eventType="touchUpInside" id="S94-gF-N7Q"/>
                                         </connections>
                                     </button>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="b49-9l-RiS">
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="b49-9l-RiS" userLabel="tealColor">
                                         <rect key="frame" x="300" y="0.0" width="30" height="30"/>
                                         <color key="backgroundColor" red="0.20645179586512538" green="0.75899761782005226" blue="0.81176470590000005" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                        <color key="tintColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <connections>
                                             <action selector="addColorSix:" destination="GUv-F0-UjH" eventType="touchUpInside" id="nsB-QP-JCB"/>
                                         </connections>
                                     </button>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fMn-Z3-Spt">
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fMn-Z3-Spt" userLabel="greenColor">
                                         <rect key="frame" x="360" y="0.0" width="30" height="30"/>
                                         <color key="backgroundColor" red="0.17009668695959296" green="0.62890625" blue="0.32260880644268231" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                        <color key="tintColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <connections>
                                             <action selector="addColorSeven:" destination="GUv-F0-UjH" eventType="touchUpInside" id="qsL-YL-U6N"/>
                                         </connections>
@@ -258,17 +263,19 @@
                                 </subviews>
                             </stackView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="VSy-JT-EsM">
-                                <rect key="frame" x="164.66666666666666" y="579" width="85" height="33"/>
+                                <rect key="frame" x="107" y="579" width="200" height="70"/>
                                 <color key="backgroundColor" red="0.33929505939999999" green="0.62991499900000003" blue="1" alpha="1" colorSpace="deviceRGB"/>
                                 <constraints>
-                                    <constraint firstAttribute="width" constant="85" id="Aro-b5-1lb"/>
+                                    <constraint firstAttribute="width" constant="200" id="Aro-b5-1lb"/>
+                                    <constraint firstAttribute="height" constant="70" id="tJE-Bi-7q1"/>
                                 </constraints>
-                                <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
+                                <fontDescription key="fontDescription" type="system" weight="heavy" pointSize="26"/>
                                 <state key="normal" title="Add">
                                     <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 </state>
                                 <connections>
                                     <action selector="addTherapy:" destination="GUv-F0-UjH" eventType="touchUpInside" id="Ukl-yV-rLj"/>
+                                    <segue destination="plj-0q-r3J" kind="unwind" identifier="unwindToMethods" unwindAction="unwindToMethodsWithSegue:" id="F0p-2U-N4w"/>
                                 </connections>
                             </button>
                             <stackView opaque="NO" contentMode="scaleToFill" distribution="equalSpacing" spacing="55" translatesAutoresizingMaskIntoConstraints="NO" id="9QA-IC-FYN">
@@ -284,6 +291,7 @@
                                             <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="90" id="ldB-3K-C0k"/>
                                         </constraints>
                                         <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
+                                        <color key="tintColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <state key="normal" title="Waves">
                                             <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         </state>
@@ -295,6 +303,7 @@
                                         <rect key="frame" x="150" y="0.0" width="90" height="44"/>
                                         <color key="backgroundColor" red="0.42745098040000001" green="0.73333333329999995" blue="0.38823529410000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
+                                        <color key="tintColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <state key="normal" title="Wind">
                                             <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         </state>
@@ -306,6 +315,7 @@
                                         <rect key="frame" x="300" y="0.0" width="90" height="44"/>
                                         <color key="backgroundColor" red="0.80784313730000001" green="0.3294117647" blue="0.23921568630000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
+                                        <color key="tintColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <state key="normal" title="Breath">
                                             <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         </state>
@@ -324,34 +334,37 @@
                             <stackView opaque="NO" contentMode="scaleToFill" distribution="equalSpacing" spacing="54" translatesAutoresizingMaskIntoConstraints="NO" id="gEI-xx-yZX">
                                 <rect key="frame" x="12" y="257" width="390" height="50"/>
                                 <subviews>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" adjustsImageSizeForAccessibilityContentSizeCategory="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="kVK-qO-hNk">
+                                    <button opaque="NO" contentMode="scaleAspectFit" contentHorizontalAlignment="center" contentVerticalAlignment="center" adjustsImageSizeForAccessibilityContentSizeCategory="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="kVK-qO-hNk">
                                         <rect key="frame" x="0.0" y="0.0" width="50" height="50"/>
-                                        <color key="backgroundColor" red="0.26956719159999998" green="0.54181420800000002" blue="0.2273020446" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="50" id="RDV-4P-P1y"/>
                                             <constraint firstAttribute="width" constant="50" id="abO-yd-pYE"/>
                                         </constraints>
+                                        <state key="normal" image="family"/>
                                         <connections>
                                             <action selector="iconFourPressed:" destination="GUv-F0-UjH" eventType="touchUpInside" id="zni-o8-VrU"/>
                                         </connections>
                                     </button>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" adjustsImageSizeForAccessibilityContentSizeCategory="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="o47-q7-EzQ">
+                                    <button opaque="NO" contentMode="scaleAspectFit" contentHorizontalAlignment="center" contentVerticalAlignment="center" adjustsImageSizeForAccessibilityContentSizeCategory="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="o47-q7-EzQ">
                                         <rect key="frame" x="113.33333333333331" y="0.0" width="50" height="50"/>
-                                        <color key="backgroundColor" red="0.26956719159999998" green="0.54181420800000002" blue="0.2273020446" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <state key="normal" image="Night"/>
                                         <connections>
                                             <action selector="iconThreePressed:" destination="GUv-F0-UjH" eventType="touchUpInside" id="nTq-LI-Ot0"/>
                                         </connections>
                                     </button>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" adjustsImageSizeForAccessibilityContentSizeCategory="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Daz-lM-4Kb">
+                                    <button opaque="NO" contentMode="scaleAspectFit" contentHorizontalAlignment="center" contentVerticalAlignment="center" adjustsImageSizeForAccessibilityContentSizeCategory="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Daz-lM-4Kb">
                                         <rect key="frame" x="226.66666666666666" y="0.0" width="49.999999999999972" height="50"/>
-                                        <color key="backgroundColor" red="0.26956719159999998" green="0.54181420800000002" blue="0.2273020446" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <state key="normal" image="Waves"/>
                                         <connections>
                                             <action selector="iconTwoPressed:" destination="GUv-F0-UjH" eventType="touchUpInside" id="TJ1-TY-dzh"/>
                                         </connections>
                                     </button>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" adjustsImageSizeForAccessibilityContentSizeCategory="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="VvA-DR-JZy">
+                                    <button opaque="NO" contentMode="scaleAspectFit" contentHorizontalAlignment="center" contentVerticalAlignment="center" adjustsImageSizeForAccessibilityContentSizeCategory="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="VvA-DR-JZy">
                                         <rect key="frame" x="340" y="0.0" width="50" height="50"/>
-                                        <color key="backgroundColor" red="0.26956719159999998" green="0.54181420800000002" blue="0.2273020446" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <state key="normal" image="Rain"/>
                                         <connections>
                                             <action selector="iconOnePressed:" destination="GUv-F0-UjH" eventType="touchUpInside" id="Fk7-Dy-hR0"/>
                                         </connections>
@@ -367,13 +380,13 @@
                                 </constraints>
                             </stackView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Name" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="FpB-hO-62S">
-                                <rect key="frame" x="12" y="112" width="55" height="24"/>
-                                <fontDescription key="fontDescription" type="boldSystem" pointSize="20"/>
+                                <rect key="frame" x="11.999999999999996" y="112" width="53.666666666666657" height="24"/>
+                                <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="20"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="i39-J8-89k">
-                                <rect key="frame" x="73" y="109" width="329" height="30"/>
+                                <rect key="frame" x="71.666666666666657" y="109" width="330.33333333333337" height="30"/>
                                 <nil key="textColor"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
@@ -402,7 +415,7 @@
                                 <constraints>
                                     <constraint firstAttribute="height" constant="44" id="l5B-Pe-n5A"/>
                                 </constraints>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="20"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
@@ -451,13 +464,23 @@
                     </view>
                     <connections>
                         <outlet property="addTherapyBtn" destination="VSy-JT-EsM" id="6Ob-Hr-X4w"/>
+                        <outlet property="breatheButton" destination="CDR-6i-RQr" id="LmJ-yt-rAe"/>
                         <outlet property="notifyPeopleSwitch" destination="9UX-aF-bbN" id="fiR-5U-PNi"/>
                         <outlet property="titleTextField" destination="i39-J8-89k" id="Wlg-3h-wut"/>
+                        <outlet property="wavesBtn" destination="zpb-1o-uMB" id="Yxv-gJ-fbW"/>
+                        <outlet property="windBtn" destination="j5s-s1-WLc" id="aVO-8T-qCm"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="f9d-ez-kPd" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <exit id="plj-0q-r3J" userLabel="Exit" sceneMemberID="exit"/>
             </objects>
             <point key="canvasLocation" x="2503" y="-521"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="Night" width="2000" height="2000"/>
+        <image name="Rain" width="2000" height="2000"/>
+        <image name="Waves" width="2000" height="2000"/>
+        <image name="family" width="2000" height="2000"/>
+    </resources>
 </document>

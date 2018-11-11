@@ -7,6 +7,7 @@
 //
 
 import WatchKit
+import AVFoundation
 import Foundation
 
 class LandingPageIC: WKInterfaceController
@@ -38,5 +39,32 @@ class LandingPageIC: WKInterfaceController
     @IBAction func StartBtnPressed()
     {
         WKInterfaceController.reloadRootControllers(withNames: ["Buttons", "Info", "Locket"], contexts: ["Button", "Info", "Locket"])
+        
+        let session = AVAudioSession.sharedInstance()
+        
+        do {
+            try session.setCategory(AVAudioSession.Category.playback, mode: .default, options: [])
+        } catch let error{
+            print(error)
+        }
+        
+        let player: AVAudioPlayer
+    
+        let url = URL(fileURLWithPath: "breathe.mp4")
+        do {
+            player = try AVAudioPlayer(contentsOf: url)
+            
+            session.activate(options: []) { (success, error) in
+                guard error == nil else {
+                    print("*** An error occurred: \(error!.localizedDescription) ***")
+                    // Handle the error here.
+                    return
+                }
+                
+                player.play()
+            }
+        } catch let error {
+            print(error)
+        }
     }
 }

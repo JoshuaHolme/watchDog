@@ -41,5 +41,11 @@
 		<string>UIInterfaceOrientationLandscapeLeft</string>
 		<string>UIInterfaceOrientationLandscapeRight</string>
 	</array>
+	<key>NSHealthShareUsageDescription</key>
+	<string>This will be used to measure your heart rate and let you see if you are calming down from the application</string>
+	<key>NSHealthUpdateUsageDescription</key>
+	<string>This will be sued to measure your heart rate and let you see if you are calming down from the application</string>
+	<key>NSPhotoLibraryUsageDescription</key>
+	<string>We need the photo library to add pictures of loved ones or safe places you may need to help calm you down</string>
 </dict>
 </plist>

@@ -15,7 +15,7 @@ import UIKit
 class InfoIC: WKInterfaceController
 {
     @IBOutlet weak var bpmLabel: WKInterfaceLabel!
-    @IBOutlet weak var breatheImage: WKInterfaceImage!
+    @IBOutlet weak var backgroundGroup: WKInterfaceGroup!
     
     let shrinkFactor = CGFloat(2.0 / 3)
     var expandFactor: CGFloat {
@@ -24,15 +24,30 @@ class InfoIC: WKInterfaceController
     
     var currentBeatPatternIndex = 0
     var heartRateQuery: HKObserverQuery!
+    var workoutConfiguration = HKWorkoutConfiguration()
     var healthStore: HKHealthStore = HKHealthStore()
     
     override func awake(withContext context: Any?)
     {
         super.awake(withContext: context)
         
-        // Configure interface objects here.
+        let configuration = HKWorkoutConfiguration()
+        configuration.activityType = .running
+        configuration.locationType = .indoor
         
-        Timer.scheduledTimer(timeInterval: 8, target: self, selector: #selector(beatAnimation), userInfo: nil, repeats: true)
+        do {
+            let session = try HKWorkoutSession(healthStore: healthStore, configuration: configuration)
+            
+            session.delegate = self as? HKWorkoutSessionDelegate
+            session.startActivity(with: NSDate() as Date)
+        }
+        catch let error as NSError {
+            // Perform proper error handling here...
+            fatalError("*** Unable to create the workout session: \(error.localizedDescription) ***")
+        }
+            
+            Timer.scheduledTimer(timeInterval: 5, target: self, selector: #selector(beatAnimation), userInfo: nil, repeats: true)
+            
     }
     
     override func willActivate()
@@ -50,6 +65,24 @@ class InfoIC: WKInterfaceController
     }
     
     @objc func beatAnimation() {
+        
+        WKInterfaceDevice.current().play(.retry)
+        sleep(UInt32(0.25))
+        WKInterfaceDevice.current().play(.click)
+        
+        let duration = 0.35
+        let delay = DispatchTime.now() + (duration + 0.15)
+        // 2
+        backgroundGroup.setBackgroundImageNamed("Progress")
+        // 3
+        backgroundGroup.startAnimatingWithImages(in: NSRange(location: 0, length: 10),
+                                                 duration: duration,
+                                                 repeatCount: 1)
+        // 4
+        DispatchQueue.main.asyncAfter(deadline: delay) { [weak self] in
+            // 5
+            self?.dismiss()
+        }
     
         self.fetchLatestHeartRateSample(completion: { sample in
             guard let sample = sample else {
@@ -67,7 +100,8 @@ class InfoIC: WKInterfaceController
                     .doubleValue(for: heartRateUnit)
                 
                 /// Updating the UI with the retrieved value
-                self.bpmLabel.setText("\(Int(heartRate))")
+                print("\(Int(heartRate))")
+                self.bpmLabel.setText("\(Int(heartRate)) BPM")
             }
         })
         

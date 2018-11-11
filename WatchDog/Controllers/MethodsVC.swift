@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import HealthKit
 
 class MethodsVC: UIViewController, UITableViewDelegate, UITableViewDataSource {
 
@@ -17,9 +18,6 @@ class MethodsVC: UIViewController, UITableViewDelegate, UITableViewDataSource {
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
-        
-        
-        //methods = DataStorage.instance.getMethods()
         methods = DataStorage.instance.getMethods()
         
         navigationController?.navigationBar.prefersLargeTitles = true
@@ -40,5 +38,7 @@ class MethodsVC: UIViewController, UITableViewDelegate, UITableViewDataSource {
         
         return cell
     }
+    
+    @IBAction func unwindToMethods(segue:UIStoryboardSegue) { }
 }
 

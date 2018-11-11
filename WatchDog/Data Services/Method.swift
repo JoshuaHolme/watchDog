@@ -16,13 +16,13 @@ class Method: NSObject, NSCoding {
     var color: UIColor
     
     var canSendMessages: Bool
-    var contacts: [Int]
+    var contacts: [String]
     
-    var image: String
+    var image: UIImage
     
     var audio: String
     
-    init(title: String, icon: String, canSendMessages: Bool, contacts: [Int], image: String, audio: String, color: UIColor) {
+    init(title: String, icon: String, canSendMessages: Bool, contacts: [String], image: UIImage, audio: String, color: UIColor) {
         self.title = title
         self.icon = icon
         self.canSendMessages = canSendMessages
@@ -36,8 +36,8 @@ class Method: NSObject, NSCoding {
         let title = aDecoder.decodeObject(forKey: Constants.instance.TITLE) as! String
         let icon = aDecoder.decodeObject(forKey: Constants.instance.ICON) as! String
         let canSendMessages = aDecoder.decodeBool(forKey: Constants.instance.CAN_SEND_MESSAGES) 
-        let contacts = aDecoder.decodeObject(forKey: Constants.instance.CONTACTS) as! [Int]
-        let image = aDecoder.decodeObject(forKey: Constants.instance.IMAGE) as! String
+        let contacts = aDecoder.decodeObject(forKey: Constants.instance.CONTACTS) as! [String]
+        let image = aDecoder.decodeObject(forKey: Constants.instance.IMAGE) as! UIImage
         let audio = aDecoder.decodeObject(forKey: Constants.instance.AUDIO) as! String
         let color = aDecoder.decodeObject(forKey: Constants.instance.COLOR) as! UIColor
         

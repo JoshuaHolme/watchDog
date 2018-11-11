@@ -28,4 +28,6 @@ class Constants {
     let TIME_FRAME = "timeFrame"
     let SETTING = "setting"
     
+    let UNWIND_TO_METHODS = "unwindToMethods"
+    
 }
