@@ -24,7 +24,7 @@ class InfoIC: WKInterfaceController
     
     var currentBeatPatternIndex = 0
     var heartRateQuery: HKObserverQuery!
-    var healthStore: HKHealthStore!
+    var healthStore: HKHealthStore = HKHealthStore()
     
     override func awake(withContext context: Any?)
     {

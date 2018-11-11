@@ -22,4 +22,10 @@ class Constants {
     let IMAGE = "image"
     let AUDIO = "audio"
     let COLOR = "color"
+    
+    let BPM = "bpm"
+    let DESCRIPTION = "description"
+    let TIME_FRAME = "timeFrame"
+    let SETTING = "setting"
+    
 }

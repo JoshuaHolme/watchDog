@@ -27,6 +27,8 @@
 		3163E99E2197472F00AFCD68 /* NotificationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3163E99D2197472F00AFCD68 /* NotificationController.swift */; };
 		3163E9A02197472F00AFCD68 /* ComplicationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3163E99F2197472F00AFCD68 /* ComplicationController.swift */; };
 		3163E9A22197473000AFCD68 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3163E9A12197473000AFCD68 /* Assets.xcassets */; };
+		319DC2822197F59200C3138D /* HealthKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 319DC2812197F59200C3138D /* HealthKit.framework */; };
+		319DC2842197F61600C3138D /* HealthData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 319DC2832197F61600C3138D /* HealthData.swift */; };
 		69C758CE21978EF800E24F61 /* LocketIC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69C758C6219787A400E24F61 /* LocketIC.swift */; };
 		69C758CF21978EF800E24F61 /* InfoIC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69C758C42197879500E24F61 /* InfoIC.swift */; };
 		69C758D021978EF800E24F61 /* ButtonPageIC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69C758C22197878B00E24F61 /* ButtonPageIC.swift */; };
@@ -119,6 +121,9 @@
 		3163E9A12197473000AFCD68 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		3163E9A32197473000AFCD68 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		3163E9A42197473000AFCD68 /* PushNotificationPayload.apns */ = {isa = PBXFileReference; lastKnownFileType = text; path = PushNotificationPayload.apns; sourceTree = "<group>"; };
+		319DC27F2197F59200C3138D /* WatchDog WatchKit Extension.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = "WatchDog WatchKit Extension.entitlements"; sourceTree = "<group>"; };
+		319DC2812197F59200C3138D /* HealthKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = HealthKit.framework; path = Platforms/WatchOS.platform/Developer/SDKs/WatchOS5.1.sdk/System/Library/Frameworks/HealthKit.framework; sourceTree = DEVELOPER_DIR; };
+		319DC2832197F61600C3138D /* HealthData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HealthData.swift; sourceTree = "<group>"; };
 		69C758C22197878B00E24F61 /* ButtonPageIC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ButtonPageIC.swift; sourceTree = "<group>"; };
 		69C758C42197879500E24F61 /* InfoIC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InfoIC.swift; sourceTree = "<group>"; };
 		69C758C6219787A400E24F61 /* LocketIC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocketIC.swift; sourceTree = "<group>"; };
@@ -151,6 +156,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				319DC2822197F59200C3138D /* HealthKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -162,6 +168,7 @@
 			children = (
 				313CC44121976371008ED363 /* DataStorage.swift */,
 				313CC43F21976123008ED363 /* Method.swift */,
+				319DC2832197F61600C3138D /* HealthData.swift */,
 			);
 			path = "Data Services";
 			sourceTree = "<group>";
@@ -193,6 +200,7 @@
 				3163E9892197472F00AFCD68 /* WatchDog WatchKit App */,
 				3163E9982197472F00AFCD68 /* WatchDog WatchKit Extension */,
 				3163E95E2197472D00AFCD68 /* Products */,
+				319DC2802197F59200C3138D /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -255,6 +263,7 @@
 		3163E9982197472F00AFCD68 /* WatchDog WatchKit Extension */ = {
 			isa = PBXGroup;
 			children = (
+				319DC27F2197F59200C3138D /* WatchDog WatchKit Extension.entitlements */,
 				3163E99B2197472F00AFCD68 /* ExtensionDelegate.swift */,
 				3163E99D2197472F00AFCD68 /* NotificationController.swift */,
 				3163E99F2197472F00AFCD68 /* ComplicationController.swift */,
@@ -263,6 +272,14 @@
 				3163E9A42197473000AFCD68 /* PushNotificationPayload.apns */,
 			);
 			path = "WatchDog WatchKit Extension";
+			sourceTree = "<group>";
+		};
+		319DC2802197F59200C3138D /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				319DC2812197F59200C3138D /* HealthKit.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 		69C758BF2197864A00E24F61 /* Controllers */ = {
@@ -394,6 +411,11 @@
 					};
 					3163E9932197472F00AFCD68 = {
 						CreatedOnToolsVersion = 10.1;
+						SystemCapabilities = {
+							com.apple.HealthKit.watchos = {
+								enabled = 1;
+							};
+						};
 					};
 				};
 			};
@@ -471,6 +493,7 @@
 				313CC44021976123008ED363 /* Method.swift in Sources */,
 				313CC44221976371008ED363 /* DataStorage.swift in Sources */,
 				3163E9632197472D00AFCD68 /* MethodsVC.swift in Sources */,
+				319DC2842197F61600C3138D /* HealthData.swift in Sources */,
 				313CC43921975BF2008ED363 /* MethodsTVCell.swift in Sources */,
 				313CC445219792A0008ED363 /* addTherapyVC.swift in Sources */,
 				3163E9612197472D00AFCD68 /* AppDelegate.swift in Sources */,
@@ -681,6 +704,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_COMPLICATION_NAME = Complication;
+				CODE_SIGN_ENTITLEMENTS = "WatchDog WatchKit Extension/WatchDog WatchKit Extension.entitlements";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = MJGY4K29T3;
 				INFOPLIST_FILE = "WatchDog WatchKit Extension/Info.plist";
@@ -703,6 +727,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_COMPLICATION_NAME = Complication;
+				CODE_SIGN_ENTITLEMENTS = "WatchDog WatchKit Extension/WatchDog WatchKit Extension.entitlements";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = MJGY4K29T3;
 				INFOPLIST_FILE = "WatchDog WatchKit Extension/Info.plist";
