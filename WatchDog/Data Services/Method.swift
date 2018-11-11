@@ -35,7 +35,7 @@ class Method: NSObject, NSCoding {
     required convenience init(coder aDecoder: NSCoder) {
         let title = aDecoder.decodeObject(forKey: Constants.instance.TITLE) as! String
         let icon = aDecoder.decodeObject(forKey: Constants.instance.ICON) as! String
-        let canSendMessages = aDecoder.decodeObject(forKey: Constants.instance.CAN_SEND_MESSAGES) as! Bool
+        let canSendMessages = aDecoder.decodeBool(forKey: Constants.instance.CAN_SEND_MESSAGES) 
         let contacts = aDecoder.decodeObject(forKey: Constants.instance.CONTACTS) as! [Int]
         let image = aDecoder.decodeObject(forKey: Constants.instance.IMAGE) as! String
         let audio = aDecoder.decodeObject(forKey: Constants.instance.AUDIO) as! String

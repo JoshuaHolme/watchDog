@@ -20,7 +20,7 @@ class MethodsVC: UIViewController, UITableViewDelegate, UITableViewDataSource {
         
         
         //methods = DataStorage.instance.getMethods()
-        methods.append(Method(title: "Wife and Kids", icon: "RPi.jpg", canSendMessages: true, contacts: [5088224486], image: "", audio: "", color: #colorLiteral(red: 0.2196078449, green: 0.007843137719, blue: 0.8549019694, alpha: 1)))
+        methods = DataStorage.instance.getMethods()
         
         navigationController?.navigationBar.prefersLargeTitles = true
         self.tableView.separatorStyle = UITableViewCell.SeparatorStyle.none

@@ -50,5 +50,18 @@ class DataStorage {
         }
     }
     
+    func appendMethod(append element: Method, to methodArray: [Method]) {
+        var methods = methodArray
+        methods.append(element)
+        
+        setMethods(methods: methods) { (isComplete) in
+            if isComplete == true {
+                print("Element Added")
+            } else {
+                print("Element was not Added Successfully")
+            }
+        }
+    }
+    
     
 }

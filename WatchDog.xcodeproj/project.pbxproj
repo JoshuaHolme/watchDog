@@ -11,6 +11,7 @@
 		313CC43E219760CD008ED363 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 313CC43D219760CD008ED363 /* Constants.swift */; };
 		313CC44021976123008ED363 /* Method.swift in Sources */ = {isa = PBXBuildFile; fileRef = 313CC43F21976123008ED363 /* Method.swift */; };
 		313CC44221976371008ED363 /* DataStorage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 313CC44121976371008ED363 /* DataStorage.swift */; };
+		313CC445219792A0008ED363 /* addTherapyVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 313CC444219792A0008ED363 /* addTherapyVC.swift */; };
 		3163E9612197472D00AFCD68 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3163E9602197472D00AFCD68 /* AppDelegate.swift */; };
 		3163E9632197472D00AFCD68 /* MethodsVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3163E9622197472D00AFCD68 /* MethodsVC.swift */; };
 		3163E9662197472D00AFCD68 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3163E9642197472D00AFCD68 /* Main.storyboard */; };
@@ -90,6 +91,7 @@
 		313CC43D219760CD008ED363 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 		313CC43F21976123008ED363 /* Method.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Method.swift; sourceTree = "<group>"; };
 		313CC44121976371008ED363 /* DataStorage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataStorage.swift; sourceTree = "<group>"; };
+		313CC444219792A0008ED363 /* addTherapyVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = addTherapyVC.swift; sourceTree = "<group>"; };
 		3163E95D2197472D00AFCD68 /* WatchDog.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WatchDog.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		3163E9602197472D00AFCD68 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		3163E9622197472D00AFCD68 /* MethodsVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MethodsVC.swift; sourceTree = "<group>"; };
@@ -171,6 +173,7 @@
 			children = (
 				313CC43821975BF2008ED363 /* MethodsTVCell.swift */,
 				3163E9622197472D00AFCD68 /* MethodsVC.swift */,
+				313CC444219792A0008ED363 /* addTherapyVC.swift */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -452,6 +455,7 @@
 				313CC44221976371008ED363 /* DataStorage.swift in Sources */,
 				3163E9632197472D00AFCD68 /* MethodsVC.swift in Sources */,
 				313CC43921975BF2008ED363 /* MethodsTVCell.swift in Sources */,
+				313CC445219792A0008ED363 /* addTherapyVC.swift in Sources */,
 				3163E9612197472D00AFCD68 /* AppDelegate.swift in Sources */,
 				313CC43E219760CD008ED363 /* Constants.swift in Sources */,
 			);
