@@ -33,10 +33,6 @@ class addTherapyVC: UIViewController {
         view.addGestureRecognizer(tap)
         
         methods = DataStorage.instance.getMethods()
-
-        // Do any additional setup after loading the view.
-        self.navigationBar.backgroundColor = UIColor.clear
-        self.navigationBar.isTranslucent = false
     }
     
     @IBAction func imageButtonPushed(_ sender: Any) {
