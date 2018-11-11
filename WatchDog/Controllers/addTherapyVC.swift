@@ -29,6 +29,9 @@ class addTherapyVC: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        let tap: UITapGestureRecognizer = UITapGestureRecognizer(target: self, action: #selector(addTherapyVC.dismissKeyboard))
+        view.addGestureRecognizer(tap)
+        
         methods = DataStorage.instance.getMethods()
 
         // Do any additional setup after loading the view.
@@ -107,11 +110,18 @@ class addTherapyVC: UIViewController {
     
     @IBAction func addTherapy(_ sender: Any) {
         
+        titleName = titleTextField.text!
+        
         let newMethod: Method = Method(title: titleName, icon: icon, canSendMessages: canSendMessage, contacts: contacts, image: image, audio: audio, color: color)
             
         DataStorage.instance.appendMethod(append: newMethod, to: methods)
         
         dismiss(animated: true, completion: nil)
         
+    }
+    
+    @objc func dismissKeyboard() {
+        //Causes the view (or one of its embedded text fields) to resign the first responder status.
+        view.endEditing(true)
     }
 }
