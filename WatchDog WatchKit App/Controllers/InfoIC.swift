@@ -33,7 +33,24 @@ class InfoIC: WKInterfaceController
         // Configure interface objects here.
         
         Timer.scheduledTimer(timeInterval: 8, target: self, selector: #selector(beatAnimation), userInfo: nil, repeats: true)
+    }
+    
+    override func willActivate()
+    {
+        // This method is called when watch view controller is about to be visible to user
+        super.willActivate()
         
+    }
+    
+    override func didDeactivate()
+    {
+        // This method is called when watch view controller is no longer visible
+        super.didDeactivate()
+        
+    }
+    
+    @objc func beatAnimation() {
+    
         self.fetchLatestHeartRateSample(completion: { sample in
             guard let sample = sample else {
                 return
@@ -53,24 +70,6 @@ class InfoIC: WKInterfaceController
                 self.bpmLabel.setText("\(Int(heartRate))")
             }
         })
-    }
-    
-    override func willActivate()
-    {
-        // This method is called when watch view controller is about to be visible to user
-        super.willActivate()
-        
-    }
-    
-    override func didDeactivate()
-    {
-        // This method is called when watch view controller is no longer visible
-        super.didDeactivate()
-        
-    }
-    
-    @objc func beatAnimation() {
-    
         
     }
     
