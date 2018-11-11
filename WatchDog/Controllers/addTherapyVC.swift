@@ -110,13 +110,13 @@ class addTherapyVC: UIViewController {
     
     @IBAction func addTherapy(_ sender: Any) {
         
-        titleName = titleTextField.text!
-        
-        let newMethod: Method = Method(title: titleName, icon: icon, canSendMessages: canSendMessage, contacts: contacts, image: image, audio: audio, color: color)
-            
-        DataStorage.instance.appendMethod(append: newMethod, to: methods)
-        
-        dismiss(animated: true, completion: nil)
+//        titleName = titleTextField.text!
+//        
+//        let newMethod: Method = Method(title: titleName, icon: icon, canSendMessages: canSendMessage, contacts: contacts, image: image, audio: audio, color: color)
+//            
+//        DataStorage.instance.appendMethod(append: newMethod, to: methods)
+//        
+//        dismiss(animated: true, completion: nil)
         
     }
     

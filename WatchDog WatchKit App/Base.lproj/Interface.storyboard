@@ -72,7 +72,7 @@
                                 </group>
                                 <group width="0.5" alignment="left" id="pVu-IX-enL">
                                     <items>
-                                        <button width="80" height="80" alignment="center" backgroundImage="Exit" id="ggu-Z3-nrd"/>
+                                        <button width="75" height="75" alignment="center" backgroundImage="Exit" id="ggu-Z3-nrd"/>
                                     </items>
                                 </group>
                             </items>
@@ -81,12 +81,12 @@
                             <items>
                                 <group width="0.5" alignment="center" verticalAlignment="bottom" id="QFl-FC-Zh9">
                                     <items>
-                                        <button width="80" height="80" alignment="center" verticalAlignment="center" backgroundImage="SOS" id="B6L-KU-IEh"/>
+                                        <button width="75" height="75" alignment="center" verticalAlignment="center" backgroundImage="Messages" id="xtl-Vz-4cP"/>
                                     </items>
                                 </group>
                                 <group width="0.5" alignment="center" verticalAlignment="bottom" id="fyl-ln-KXq">
                                     <items>
-                                        <button width="80" height="80" alignment="center" verticalAlignment="center" backgroundImage="Messages" id="xtl-Vz-4cP"/>
+                                        <button width="75" height="75" alignment="center" verticalAlignment="center" backgroundImage="SOS" id="B6L-KU-IEh"/>
                                     </items>
                                 </group>
                             </items>
@@ -108,10 +108,12 @@
                             <items>
                                 <imageView width="0.29999999999999999" height="1" alignment="left" image="Waves" contentMode="scaleAspectFit" id="88Y-7U-BF2"/>
                                 <label alignment="right" verticalAlignment="center" semanticContentAttribute="spatial" text="74 BPM" textAlignment="left" id="UeG-Lm-59r">
+                                    <color key="textColor" white="1" alpha="0.63077910958904104" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                     <fontDescription key="font" style="UICTFontTextStyleTitle0"/>
                                 </label>
                             </items>
                         </group>
+                        <imageView width="120" height="120" alignment="center" verticalAlignment="center" id="it2-xy-5Hz"/>
                     </items>
                     <menu key="menu" id="8nV-Qh-N0p">
                         <items>
@@ -119,18 +121,20 @@
                         </items>
                     </menu>
                     <connections>
+                        <outlet property="bpmLabel" destination="UeG-Lm-59r" id="b10-l2-agp"/>
+                        <outlet property="breatheImage" destination="it2-xy-5Hz" id="wS0-Wl-KYc"/>
                         <segue destination="d3i-Ty-QIN" kind="relationship" relationship="nextPage" id="Jxs-zB-9ud"/>
                     </connections>
                 </controller>
             </objects>
-            <point key="canvasLocation" x="494" y="-87"/>
+            <point key="canvasLocation" x="493.73913043478257" y="-87.276785714285722"/>
         </scene>
         <!--Locket-->
         <scene sceneID="cGl-mz-dyd">
             <objects>
-                <controller identifier="Locket" id="d3i-Ty-QIN" customClass="LocketIC" customModule="WatchDog_WatchKit_Extension">
+                <controller identifier="Locket" fullBounds="YES" fullScreen="YES" id="d3i-Ty-QIN" customClass="LocketIC" customModule="WatchDog_WatchKit_Extension">
                     <items>
-                        <imageView alignment="left" image="IMG_0001" contentMode="scaleAspectFill" id="sAi-eT-ZMR"/>
+                        <imageView alignment="center" verticalAlignment="center" image="IMG_0001" id="sAi-eT-ZMR"/>
                     </items>
                     <menu key="menu" id="rkv-iD-5Eh">
                         <items>
