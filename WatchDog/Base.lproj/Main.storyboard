@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="IUa-Oi-gNC">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="Kx8-n0-Ff8">
     <device id="retina6_5" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
@@ -10,28 +10,11 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--Item 2-->
-        <scene sceneID="qk1-hk-MZP">
-            <objects>
-                <viewController id="WJ6-GX-SAH" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="253-cT-5gf">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                        <viewLayoutGuide key="safeArea" id="Qdr-Dq-fpL"/>
-                    </view>
-                    <tabBarItem key="tabBarItem" title="Item 2" id="rwJ-uK-wzT"/>
-                    <navigationItem key="navigationItem" id="v9o-8Y-L7Q"/>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="BOB-3V-gDq" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="1652" y="280"/>
-        </scene>
-        <!--Item-->
+        <!--Navigation Controller-->
         <scene sceneID="X20-ai-AIh">
             <objects>
                 <navigationController id="Kx8-n0-Ff8" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Item" id="vNc-1t-CyP"/>
+                    <tabBarItem key="tabBarItem" selectedImage="Graph" systemItem="favorites" id="vNc-1t-CyP"/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="TDl-ul-tct">
                         <rect key="frame" x="0.0" y="44" width="414" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
@@ -53,7 +36,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="120" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="1uD-7G-zby">
-                                <rect key="frame" x="0.0" y="88" width="414" height="725"/>
+                                <rect key="frame" x="0.0" y="88" width="414" height="774"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <prototypes>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="MethodsCell" id="9IG-cQ-wOZ" customClass="MethodsTVCell" customModule="WatchDog" customModuleProvider="target">
@@ -144,41 +127,6 @@
             </objects>
             <point key="canvasLocation" x="1629.5999999999999" y="-520.38980509745136"/>
         </scene>
-        <!--Item-->
-        <scene sceneID="Chn-ys-1Bq">
-            <objects>
-                <navigationController id="lCU-fm-2tB" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Item" id="fRv-X6-0pZ"/>
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="CLd-gt-nDY">
-                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
-                        <autoresizingMask key="autoresizingMask"/>
-                    </navigationBar>
-                    <connections>
-                        <segue destination="WJ6-GX-SAH" kind="relationship" relationship="rootViewController" id="8WH-J7-Fb7"/>
-                    </connections>
-                </navigationController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="0zT-cC-58a" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="769" y="279"/>
-        </scene>
-        <!--Tab Bar Controller-->
-        <scene sceneID="doV-HV-wSm">
-            <objects>
-                <tabBarController id="IUa-Oi-gNC" sceneMemberID="viewController">
-                    <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="A9k-Kd-t0V">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="49"/>
-                        <autoresizingMask key="autoresizingMask"/>
-                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                    </tabBar>
-                    <connections>
-                        <segue destination="Kx8-n0-Ff8" kind="relationship" relationship="viewControllers" id="10g-4J-Z8s"/>
-                        <segue destination="lCU-fm-2tB" kind="relationship" relationship="viewControllers" id="KTB-7X-sox"/>
-                    </connections>
-                </tabBarController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="dos-Yk-h6A" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="-183" y="-59"/>
-        </scene>
         <!--Add TherapyVC-->
         <scene sceneID="7Md-yI-TlF">
             <objects>
@@ -194,9 +142,7 @@
                                     <constraint firstAttribute="height" constant="44" id="XIb-eq-dvy"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="19"/>
-                                <state key="normal" title="  Select a comforting image">
-                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                </state>
+                                <state key="normal" title="  Select a comforting image"/>
                                 <connections>
                                     <action selector="imageButtonPushed:" destination="GUv-F0-UjH" eventType="touchUpInside" id="Q2I-6Q-WVl"/>
                                 </connections>
@@ -478,6 +424,7 @@
         </scene>
     </scenes>
     <resources>
+        <image name="Graph" width="23" height="23"/>
         <image name="Night" width="2000" height="2000"/>
         <image name="Rain" width="2000" height="2000"/>
         <image name="Waves" width="2000" height="2000"/>

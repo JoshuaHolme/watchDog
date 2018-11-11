@@ -67,7 +67,7 @@
                             <items>
                                 <group width="0.5" alignment="center" id="WfM-Te-78Z">
                                     <items>
-                                        <button width="80" height="80" alignment="center" verticalAlignment="center" backgroundImage="Phone" id="fmB-u7-5BF"/>
+                                        <button width="75" height="75" alignment="center" verticalAlignment="center" backgroundImage="Phone" id="fmB-u7-5BF"/>
                                     </items>
                                 </group>
                                 <group width="0.5" alignment="left" id="pVu-IX-enL">
