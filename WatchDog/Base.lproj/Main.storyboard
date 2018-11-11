@@ -27,7 +27,7 @@
             </objects>
             <point key="canvasLocation" x="770" y="-519"/>
         </scene>
-        <!--Therapies-->
+        <!--Therapy-->
         <scene sceneID="q0V-1U-pja">
             <objects>
                 <viewController id="HWa-WA-fbh" customClass="MethodsVC" customModule="WatchDog" customModuleProvider="target" sceneMemberID="viewController">
@@ -49,34 +49,16 @@
                                                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ifg-5E-WLS">
                                                     <rect key="frame" x="22.666666666666657" y="13.666666666666664" width="369" height="93"/>
                                                     <subviews>
-                                                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="Hxw-dv-OCa">
-                                                            <rect key="frame" x="11.999999999999996" y="46" width="35" height="35"/>
-                                                            <constraints>
-                                                                <constraint firstAttribute="width" constant="35" id="YG1-6L-mB9"/>
-                                                                <constraint firstAttribute="height" constant="35" id="zkp-0F-whx"/>
-                                                            </constraints>
-                                                        </imageView>
                                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Crashing Waves" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="c8s-23-7F5">
                                                             <rect key="frame" x="12" y="12" width="148" height="24"/>
                                                             <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="20"/>
                                                             <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                             <nil key="highlightedColor"/>
                                                         </label>
-                                                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hAL-Rs-ReH">
-                                                            <rect key="frame" x="311" y="31.333333333333336" width="46" height="30"/>
-                                                            <state key="normal" title="Button"/>
-                                                            <connections>
-                                                                <action selector="optionButtonPressed:" destination="9IG-cQ-wOZ" eventType="touchUpInside" id="CwR-bU-eJO"/>
-                                                            </connections>
-                                                        </button>
                                                     </subviews>
                                                     <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                     <constraints>
-                                                        <constraint firstAttribute="trailing" secondItem="hAL-Rs-ReH" secondAttribute="trailing" constant="12" id="08b-Sd-bRH"/>
                                                         <constraint firstItem="c8s-23-7F5" firstAttribute="leading" secondItem="ifg-5E-WLS" secondAttribute="leading" constant="12" id="0Or-lZ-n35"/>
-                                                        <constraint firstItem="hAL-Rs-ReH" firstAttribute="centerY" secondItem="ifg-5E-WLS" secondAttribute="centerY" id="EwZ-3g-FPm"/>
-                                                        <constraint firstItem="Hxw-dv-OCa" firstAttribute="leading" secondItem="ifg-5E-WLS" secondAttribute="leading" constant="12" id="Huc-2d-LJl"/>
-                                                        <constraint firstAttribute="bottom" secondItem="Hxw-dv-OCa" secondAttribute="bottom" constant="12" id="SrJ-jY-03F"/>
                                                         <constraint firstItem="c8s-23-7F5" firstAttribute="top" secondItem="ifg-5E-WLS" secondAttribute="top" constant="12" id="TjU-9k-ggz"/>
                                                     </constraints>
                                                 </view>
@@ -90,8 +72,6 @@
                                         </tableViewCellContentView>
                                         <connections>
                                             <outlet property="containerView" destination="ifg-5E-WLS" id="abY-Pa-8bZ"/>
-                                            <outlet property="imgIcn" destination="Hxw-dv-OCa" id="DjU-jh-McX"/>
-                                            <outlet property="optionsButton" destination="hAL-Rs-ReH" id="hC4-w4-7Br"/>
                                             <outlet property="title" destination="c8s-23-7F5" id="HsN-CI-lvX"/>
                                         </connections>
                                     </tableViewCell>
@@ -112,7 +92,7 @@
                         <viewLayoutGuide key="safeArea" id="L2x-kI-AOc"/>
                     </view>
                     <tabBarItem key="tabBarItem" title="Item 1" id="qqO-KT-h1E"/>
-                    <navigationItem key="navigationItem" title="Therapies" id="yJT-vT-MUs">
+                    <navigationItem key="navigationItem" title="Therapy" id="yJT-vT-MUs">
                         <barButtonItem key="rightBarButtonItem" systemItem="add" id="VSZ-0a-cpN">
                             <connections>
                                 <segue destination="GUv-F0-UjH" kind="show" id="yl2-Nc-Q3y"/>

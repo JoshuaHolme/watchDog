@@ -43,20 +43,52 @@
         <!--Landing PageIC-->
         <scene sceneID="l87-aT-TS6">
             <objects>
-                <controller id="4MN-8s-NDd" customClass="LandingPageIC" customModule="WatchDog_WatchKit_App" customModuleProvider="target">
+                <controller contentMode="scaleAspectFit" fullScreen="YES" id="4MN-8s-NDd" customClass="LandingPageIC" customModule="WatchDog_WatchKit_App" customModuleProvider="target">
                     <items>
-                        <button width="1" alignment="left" title="Start" id="Fza-An-n8n">
-                            <connections>
-                                <action selector="StartBtnPressed" destination="4MN-8s-NDd" id="K94-sQ-AaK"/>
-                            </connections>
-                        </button>
+                        <group width="1" alignment="left" id="qQg-i5-eoU">
+                            <items>
+                                <button width="0.25" height="1" alignment="left" backgroundImage="Night" id="PKR-zS-f82"/>
+                                <button width="0.75" alignment="left" title="Night Time Mode" id="k7N-7j-wQT"/>
+                            </items>
+                        </group>
+                        <group width="1" alignment="left" id="vZb-kk-WVm">
+                            <items>
+                                <button width="0.25" height="1" alignment="left" backgroundImage="Calming Beat" id="ZI7-mn-xk5"/>
+                                <button width="0.75" alignment="left" title="Happy" id="EF2-Bz-2i8"/>
+                            </items>
+                        </group>
+                        <group width="1" alignment="left" id="hdF-8f-RLS">
+                            <items>
+                                <button width="0.25" height="1" alignment="left" backgroundImage="Rain" id="AgA-Ut-tTP"/>
+                                <button width="0.75" alignment="left" title="Rain" id="PW1-j4-iie"/>
+                            </items>
+                        </group>
+                        <group width="1" alignment="left" id="WRb-WC-WbK">
+                            <items>
+                                <button width="0.25" height="1" alignment="left" backgroundImage="Waves" id="aMe-zh-O3t"/>
+                                <button width="0.75" alignment="left" title="Beach" id="e5G-sf-cm3">
+                                    <connections>
+                                        <action selector="StartBtnPressed" destination="4MN-8s-NDd" id="v1E-Qg-SUT"/>
+                                    </connections>
+                                </button>
+                            </items>
+                        </group>
+                        <group width="1" alignment="left" id="Y4s-Qz-2UI">
+                            <items>
+                                <button width="0.25" height="1" alignment="left" backgroundImage="family" id="BHU-44-m5m"/>
+                                <button width="0.75" alignment="left" title="Family" id="MLC-gX-1Ru"/>
+                            </items>
+                        </group>
+                        <group width="1" alignment="left" id="WIz-jV-tGy">
+                            <items>
+                                <button width="0.25" height="1" alignment="left" backgroundImage="SOS" id="LZT-CV-oWP"/>
+                                <button width="0.75" alignment="left" title="Get Help" id="7Kf-qZ-qp5"/>
+                            </items>
+                        </group>
                     </items>
-                    <connections>
-                        <outlet property="StartBtn" destination="Fza-An-n8n" id="ifI-bI-8tZ"/>
-                    </connections>
                 </controller>
             </objects>
-            <point key="canvasLocation" x="47" y="-354"/>
+            <point key="canvasLocation" x="46.565217391304344" y="-353.66071428571428"/>
         </scene>
         <!--Buttons-->
         <scene sceneID="GBO-7h-svg">
@@ -109,11 +141,11 @@
                                 <imageView width="0.29999999999999999" height="1" alignment="left" image="Waves" contentMode="scaleAspectFit" id="88Y-7U-BF2"/>
                                 <label alignment="right" verticalAlignment="center" semanticContentAttribute="spatial" text="74 BPM" textAlignment="left" id="UeG-Lm-59r">
                                     <color key="textColor" white="1" alpha="0.63077910958904104" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                    <fontDescription key="font" style="UICTFontTextStyleTitle0"/>
+                                    <fontDescription key="font" style="UICTFontTextStyleTitle2"/>
                                 </label>
                             </items>
                         </group>
-                        <group width="136" height="112" alignment="center" verticalAlignment="center" id="xQa-Y0-u4e"/>
+                        <group width="130" height="130" alignment="center" verticalAlignment="center" id="xQa-Y0-u4e"/>
                     </items>
                     <menu key="menu" id="8nV-Qh-N0p">
                         <items>

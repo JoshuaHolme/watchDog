@@ -13,9 +13,18 @@ import Foundation
 class LandingPageIC: WKInterfaceController
 {
     
+    struct method {
+        var name: String = " "
+        var imageName: String = " "
+        var image: String = " "
+        var phoneNumber: String = ""
+    }
+    var methods: [method] = [method(name: "Wife and Kids", imageName: "Family.pdf", image: "gang.jpeg", phoneNumber: "508-837-1117")]
+    
     override func awake(withContext context: Any?)
     {
         super.awake(withContext: context)
+        
         
         // Configure interface objects here.
     }
@@ -67,4 +76,9 @@ class LandingPageIC: WKInterfaceController
             print(error)
         }
     }
+}
+
+class MyRowController: NSObject {
+    
+    
 }

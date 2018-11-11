@@ -15,13 +15,11 @@
 		3163E9612197472D00AFCD68 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3163E9602197472D00AFCD68 /* AppDelegate.swift */; };
 		3163E9632197472D00AFCD68 /* MethodsVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3163E9622197472D00AFCD68 /* MethodsVC.swift */; };
 		3163E9662197472D00AFCD68 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3163E9642197472D00AFCD68 /* Main.storyboard */; };
-		3163E9682197472E00AFCD68 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3163E9672197472E00AFCD68 /* Assets.xcassets */; };
 		3163E96B2197472E00AFCD68 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3163E9692197472E00AFCD68 /* LaunchScreen.storyboard */; };
 		3163E9762197472F00AFCD68 /* WatchDogTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3163E9752197472F00AFCD68 /* WatchDogTests.swift */; };
 		3163E9812197472F00AFCD68 /* WatchDogUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3163E9802197472F00AFCD68 /* WatchDogUITests.swift */; };
 		3163E9862197472F00AFCD68 /* WatchDog WatchKit App.app in Embed Watch Content */ = {isa = PBXBuildFile; fileRef = 3163E9852197472F00AFCD68 /* WatchDog WatchKit App.app */; };
 		3163E98C2197472F00AFCD68 /* Interface.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3163E98A2197472F00AFCD68 /* Interface.storyboard */; };
-		3163E98E2197472F00AFCD68 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3163E98D2197472F00AFCD68 /* Assets.xcassets */; };
 		3163E9952197472F00AFCD68 /* WatchDog WatchKit Extension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 3163E9942197472F00AFCD68 /* WatchDog WatchKit Extension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 		3163E99C2197472F00AFCD68 /* ExtensionDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3163E99B2197472F00AFCD68 /* ExtensionDelegate.swift */; };
 		3163E99E2197472F00AFCD68 /* NotificationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3163E99D2197472F00AFCD68 /* NotificationController.swift */; };
@@ -45,6 +43,8 @@
 		319DC2972198256300C3138D /* wave.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = 319DC28A2198256300C3138D /* wave.mp4 */; };
 		319DC2982198256300C3138D /* wave.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = 319DC28A2198256300C3138D /* wave.mp4 */; };
 		319DC2992198256300C3138D /* wave.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = 319DC28A2198256300C3138D /* wave.mp4 */; };
+		31EEC0B2219884F1001ED747 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 31EEC0B1219884F0001ED747 /* Assets.xcassets */; };
+		31EEC0B4219889CF001ED747 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 31EEC0B3219889CE001ED747 /* Assets.xcassets */; };
 		69C758CE21978EF800E24F61 /* LocketIC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69C758C6219787A400E24F61 /* LocketIC.swift */; };
 		69C758CF21978EF800E24F61 /* InfoIC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69C758C42197879500E24F61 /* InfoIC.swift */; };
 		69C758D021978EF800E24F61 /* ButtonPageIC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69C758C22197878B00E24F61 /* ButtonPageIC.swift */; };
@@ -117,7 +117,6 @@
 		3163E9602197472D00AFCD68 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		3163E9622197472D00AFCD68 /* MethodsVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MethodsVC.swift; sourceTree = "<group>"; };
 		3163E9652197472D00AFCD68 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		3163E9672197472E00AFCD68 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		3163E96A2197472E00AFCD68 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		3163E96C2197472E00AFCD68 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		3163E9712197472F00AFCD68 /* WatchDogTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = WatchDogTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -128,7 +127,6 @@
 		3163E9822197472F00AFCD68 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		3163E9852197472F00AFCD68 /* WatchDog WatchKit App.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "WatchDog WatchKit App.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		3163E98B2197472F00AFCD68 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Interface.storyboard; sourceTree = "<group>"; };
-		3163E98D2197472F00AFCD68 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		3163E98F2197472F00AFCD68 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		3163E9942197472F00AFCD68 /* WatchDog WatchKit Extension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = "WatchDog WatchKit Extension.appex"; sourceTree = BUILT_PRODUCTS_DIR; };
 		3163E99B2197472F00AFCD68 /* ExtensionDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExtensionDelegate.swift; sourceTree = "<group>"; };
@@ -145,6 +143,8 @@
 		319DC2882198256300C3138D /* wind.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = wind.mp4; sourceTree = "<group>"; };
 		319DC2892198256300C3138D /* breathe.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = breathe.mp4; sourceTree = "<group>"; };
 		319DC28A2198256300C3138D /* wave.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = wave.mp4; sourceTree = "<group>"; };
+		31EEC0B1219884F0001ED747 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		31EEC0B3219889CE001ED747 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = Assets.xcassets; path = ../../../.Trash/Assets.xcassets; sourceTree = "<group>"; };
 		69C758C22197878B00E24F61 /* ButtonPageIC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ButtonPageIC.swift; sourceTree = "<group>"; };
 		69C758C42197879500E24F61 /* InfoIC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InfoIC.swift; sourceTree = "<group>"; };
 		69C758C6219787A400E24F61 /* LocketIC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocketIC.swift; sourceTree = "<group>"; };
@@ -191,6 +191,7 @@
 				313CC44121976371008ED363 /* DataStorage.swift */,
 				313CC43F21976123008ED363 /* Method.swift */,
 				319DC2832197F61600C3138D /* HealthData.swift */,
+				313CC444219792A0008ED363 /* addTherapyVC.swift */,
 			);
 			path = "Data Services";
 			sourceTree = "<group>";
@@ -208,7 +209,6 @@
 			children = (
 				313CC43821975BF2008ED363 /* MethodsTVCell.swift */,
 				3163E9622197472D00AFCD68 /* MethodsVC.swift */,
-				313CC444219792A0008ED363 /* addTherapyVC.swift */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -247,7 +247,7 @@
 				313CC44321978197008ED363 /* Controllers */,
 				3163E9602197472D00AFCD68 /* AppDelegate.swift */,
 				3163E9642197472D00AFCD68 /* Main.storyboard */,
-				3163E9672197472E00AFCD68 /* Assets.xcassets */,
+				31EEC0B3219889CE001ED747 /* Assets.xcassets */,
 				319DC2892198256300C3138D /* breathe.mp4 */,
 				319DC28A2198256300C3138D /* wave.mp4 */,
 				319DC2882198256300C3138D /* wind.mp4 */,
@@ -278,9 +278,9 @@
 		3163E9892197472F00AFCD68 /* WatchDog WatchKit App */ = {
 			isa = PBXGroup;
 			children = (
+				31EEC0B1219884F0001ED747 /* Assets.xcassets */,
 				69C758BF2197864A00E24F61 /* Controllers */,
 				3163E98A2197472F00AFCD68 /* Interface.storyboard */,
-				3163E98D2197472F00AFCD68 /* Assets.xcassets */,
 				3163E98F2197472F00AFCD68 /* Info.plist */,
 			);
 			path = "WatchDog WatchKit App";
@@ -483,8 +483,8 @@
 			files = (
 				3163E96B2197472E00AFCD68 /* LaunchScreen.storyboard in Resources */,
 				319DC28B2198256300C3138D /* wind.mp4 in Resources */,
-				3163E9682197472E00AFCD68 /* Assets.xcassets in Resources */,
 				3163E9662197472D00AFCD68 /* Main.storyboard in Resources */,
+				31EEC0B4219889CF001ED747 /* Assets.xcassets in Resources */,
 				319DC2952198256300C3138D /* wave.mp4 in Resources */,
 				319DC2902198256300C3138D /* breathe.mp4 in Resources */,
 			);
@@ -514,11 +514,11 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				3163E98E2197472F00AFCD68 /* Assets.xcassets in Resources */,
 				319DC2932198256300C3138D /* breathe.mp4 in Resources */,
 				319DC28E2198256300C3138D /* wind.mp4 in Resources */,
 				319DC2982198256300C3138D /* wave.mp4 in Resources */,
 				3163E98C2197472F00AFCD68 /* Interface.storyboard in Resources */,
+				31EEC0B2219884F1001ED747 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -758,7 +758,7 @@
 				ASSETCATALOG_COMPILER_COMPLICATION_NAME = Complication;
 				CODE_SIGN_ENTITLEMENTS = "WatchDog WatchKit Extension/WatchDog WatchKit Extension.entitlements";
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = TGLE8RZWF5;
+				DEVELOPMENT_TEAM = MJGY4K29T3;
 				INFOPLIST_FILE = "WatchDog WatchKit Extension/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -781,7 +781,7 @@
 				ASSETCATALOG_COMPILER_COMPLICATION_NAME = Complication;
 				CODE_SIGN_ENTITLEMENTS = "WatchDog WatchKit Extension/WatchDog WatchKit Extension.entitlements";
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = TGLE8RZWF5;
+				DEVELOPMENT_TEAM = MJGY4K29T3;
 				INFOPLIST_FILE = "WatchDog WatchKit Extension/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -804,7 +804,7 @@
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = "AppIcon-watchOS";
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = TGLE8RZWF5;
+				DEVELOPMENT_TEAM = MJGY4K29T3;
 				IBSC_MODULE = WatchDog_WatchKit_Extension;
 				INFOPLIST_FILE = "WatchDog WatchKit App/Info.plist";
 				PRODUCT_BUNDLE_IDENTIFIER = com.HolmeComputer.WatchDog.watchkitapp;
@@ -823,7 +823,7 @@
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = "AppIcon-watchOS";
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = TGLE8RZWF5;
+				DEVELOPMENT_TEAM = MJGY4K29T3;
 				IBSC_MODULE = WatchDog_WatchKit_Extension;
 				INFOPLIST_FILE = "WatchDog WatchKit App/Info.plist";
 				PRODUCT_BUNDLE_IDENTIFIER = com.HolmeComputer.WatchDog.watchkitapp;
@@ -842,7 +842,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = "AppIcon-iOS";
 				CODE_SIGN_ENTITLEMENTS = WatchDog/WatchDog.entitlements;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = TGLE8RZWF5;
+				DEVELOPMENT_TEAM = MJGY4K29T3;
 				INFOPLIST_FILE = WatchDog/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -861,7 +861,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = "AppIcon-iOS";
 				CODE_SIGN_ENTITLEMENTS = WatchDog/WatchDog.entitlements;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = TGLE8RZWF5;
+				DEVELOPMENT_TEAM = MJGY4K29T3;
 				INFOPLIST_FILE = WatchDog/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -880,7 +880,7 @@
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = TGLE8RZWF5;
+				DEVELOPMENT_TEAM = MJGY4K29T3;
 				INFOPLIST_FILE = WatchDogTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -901,7 +901,7 @@
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = TGLE8RZWF5;
+				DEVELOPMENT_TEAM = MJGY4K29T3;
 				INFOPLIST_FILE = WatchDogTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -921,7 +921,7 @@
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = TGLE8RZWF5;
+				DEVELOPMENT_TEAM = MJGY4K29T3;
 				INFOPLIST_FILE = WatchDogUITests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -941,7 +941,7 @@
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = TGLE8RZWF5;
+				DEVELOPMENT_TEAM = MJGY4K29T3;
 				INFOPLIST_FILE = WatchDogUITests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",

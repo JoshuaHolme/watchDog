@@ -11,16 +11,16 @@ import UIKit
 
 class Method: NSObject, NSCoding {
     
-    var title: String
-    var icon: String
-    var color: UIColor
+    var title: String = ""
+    var icon: String = ""
+    var color: UIColor = #colorLiteral(red: 1.0, green: 1.0, blue: 1.0, alpha: 1.0)
     
-    var canSendMessages: Bool
-    var contacts: [String]
+    var canSendMessages: Bool = false
+    var contacts: [String] = ["5088371117"]
     
-    var image: UIImage
+    var image: UIImage = UIImage()
     
-    var audio: String
+    var audio: String = "wave.mp4"
     
     init(title: String, icon: String, canSendMessages: Bool, contacts: [String], image: UIImage, audio: String, color: UIColor) {
         self.title = title
