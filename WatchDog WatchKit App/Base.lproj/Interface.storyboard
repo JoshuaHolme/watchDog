@@ -63,16 +63,32 @@
             <objects>
                 <controller identifier="Buttons" id="kGG-dW-eiJ" customClass="ButtonPageIC" customModule="WatchDog_WatchKit_Extension">
                     <items>
-                        <group width="1" height="0.5" alignment="left" id="KFa-t8-rqY">
+                        <group width="1" alignment="left" id="BiT-BX-Qh6">
                             <items>
-                                <button width="0.5" height="1" alignment="left" title="End" id="QZ9-VA-5dB"/>
-                                <button width="0.5" height="1" alignment="left" title="Call" id="9Ni-83-81C"/>
+                                <group width="0.5" alignment="center" id="WfM-Te-78Z">
+                                    <items>
+                                        <button width="80" height="80" alignment="center" verticalAlignment="center" backgroundImage="Phone" id="fmB-u7-5BF"/>
+                                    </items>
+                                </group>
+                                <group width="0.5" alignment="left" id="pVu-IX-enL">
+                                    <items>
+                                        <button width="80" height="80" alignment="center" backgroundImage="Exit" id="ggu-Z3-nrd"/>
+                                    </items>
+                                </group>
                             </items>
                         </group>
-                        <group width="1" height="0.5" alignment="left" id="qBU-jD-NXg">
+                        <group width="1" alignment="left" verticalAlignment="bottom" id="I1P-Q6-ONd">
                             <items>
-                                <button width="0.5" height="1" alignment="left" title="SOS" id="klR-Wx-qDr"/>
-                                <button width="0.5" height="1" alignment="left" title="Family" id="s45-2G-d9A"/>
+                                <group width="0.5" alignment="center" verticalAlignment="bottom" id="QFl-FC-Zh9">
+                                    <items>
+                                        <button width="80" height="80" alignment="center" verticalAlignment="center" backgroundImage="SOS" id="B6L-KU-IEh"/>
+                                    </items>
+                                </group>
+                                <group width="0.5" alignment="center" verticalAlignment="bottom" id="fyl-ln-KXq">
+                                    <items>
+                                        <button width="80" height="80" alignment="center" verticalAlignment="center" backgroundImage="Messages" id="xtl-Vz-4cP"/>
+                                    </items>
+                                </group>
                             </items>
                         </group>
                     </items>
@@ -81,7 +97,7 @@
                     </connections>
                 </controller>
             </objects>
-            <point key="canvasLocation" x="494" y="-353"/>
+            <point key="canvasLocation" x="493.73913043478257" y="-354.41964285714289"/>
         </scene>
         <!--Info-->
         <scene sceneID="siW-RP-ba5">
@@ -90,8 +106,8 @@
                     <items>
                         <group width="1" height="0.29999999999999999" alignment="left" id="lgZ-dy-W3H">
                             <items>
-                                <imageView width="0.29999999999999999" height="1" alignment="left" image="IMG_0001" contentMode="scaleAspectFill" id="88Y-7U-BF2"/>
-                                <label alignment="right" semanticContentAttribute="spatial" text="74 BPM" textAlignment="left" id="UeG-Lm-59r">
+                                <imageView width="0.29999999999999999" height="1" alignment="left" image="Waves" contentMode="scaleAspectFit" id="88Y-7U-BF2"/>
+                                <label alignment="right" verticalAlignment="center" semanticContentAttribute="spatial" text="74 BPM" textAlignment="left" id="UeG-Lm-59r">
                                     <fontDescription key="font" style="UICTFontTextStyleTitle0"/>
                                 </label>
                             </items>
