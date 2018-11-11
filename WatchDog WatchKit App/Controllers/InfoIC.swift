@@ -46,7 +46,7 @@ class InfoIC: WKInterfaceController
             fatalError("*** Unable to create the workout session: \(error.localizedDescription) ***")
         }
             
-            Timer.scheduledTimer(timeInterval: 5, target: self, selector: #selector(beatAnimation), userInfo: nil, repeats: true)
+            Timer.scheduledTimer(timeInterval: 7, target: self, selector: #selector(beatAnimation), userInfo: nil, repeats: true)
             
     }
     
@@ -70,12 +70,12 @@ class InfoIC: WKInterfaceController
         sleep(UInt32(0.25))
         WKInterfaceDevice.current().play(.click)
         
-        let duration = 0.35
+        let duration = 7.0
         let delay = DispatchTime.now() + (duration + 0.15)
         // 2
-        backgroundGroup.setBackgroundImageNamed("Progress")
+        backgroundGroup.setBackgroundImageNamed("Breathing Annimation")
         // 3
-        backgroundGroup.startAnimatingWithImages(in: NSRange(location: 0, length: 10),
+        backgroundGroup.startAnimatingWithImages(in: NSRange(location: 0, length: 420),
                                                  duration: duration,
                                                  repeatCount: 1)
         // 4

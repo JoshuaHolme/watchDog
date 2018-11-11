@@ -63,21 +63,18 @@ class ComplicationController: NSObject, CLKComplicationDataSource
         {
             let template = CLKComplicationTemplateCircularSmallSimpleImage()
             template.imageProvider = CLKImageProvider(onePieceImage: UIImage(named: "Circular")!)
-            //let timelineEntry = CLKComplicationTimelineEntry(date: Date(), complicationTemplate: template)
             handler(nil)
         }
         else if complication.family == .extraLarge
         {
             let template = CLKComplicationTemplateExtraLargeSimpleImage()
             template.imageProvider = CLKImageProvider(onePieceImage: UIImage(named: "Extra Large")!)
-            //let timelineEntry = CLKComplicationTimelineEntry(date: Date(), complicationTemplate: template)
             handler(nil)
         }
         else if complication.family == .modularSmall
         {
             let template = CLKComplicationTemplateModularSmallRingImage()
             template.imageProvider = CLKImageProvider(onePieceImage: UIImage(named: "Modular")!)
-            //let timelineEntry = CLKComplicationTimelineEntry(date: Date(), complicationTemplate: template)
             handler(nil)
         }
         else if complication.family == .utilitarianSmall
